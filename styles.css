@@ -1,3 +1,4 @@
+/* BASE STYLES */
 body {
   font-family: "Lato", sans-serif;
   color: #ffffff;
@@ -11,6 +12,21 @@ body {
   background-position-y: -150px;
 }
 
+/* ANIMATIONS */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    /* to move the item vertically in the first stage */
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    /* to move the item vertically in thefinal stage and then we have to ho to the header and add animation element in order to header items moves up and animation works on them */
+    transform: translateY(0px);
+  }
+}
+
 /* HEADER */
 
 .header {
@@ -22,6 +38,8 @@ body {
   width: 1150px;
   margin-left: auto;
   margin-right: auto;
+  /* intro animation for header items */
+  animation: fade-in 2s;
 }
 
 .logo {
