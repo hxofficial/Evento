@@ -10,3 +10,41 @@ body {
   /* bring the background up vertically */
   background-position-y: -150px;
 }
+
+/* HEADER */
+
+.header {
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.links {
+  list-style: none;
+  /* to make the links sit horizantally */
+  display: flex;
+}
+
+.link-item {
+  margin-right: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+  font-size: 14 px;
+  /* once you hover and used transition the color change smooth this way ⬇️ */
+  transition: color 0.4s;
+}
+.link:hover {
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 1);
+
+  font-weight: 500;
+  font-size: 14 px;
+}
