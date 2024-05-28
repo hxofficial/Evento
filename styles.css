@@ -10,6 +10,14 @@ body {
 
   /* bring the background up vertically */
   background-position-y: -150px;
+
+  display: flex;
+  flex-direction: column;
+  /* view board height */
+  height: 100vh;
+  /* remove scroll bar */
+  overflow-y: hidden;
+  margin: 0;
 }
 
 /* ANIMATIONS */
@@ -151,4 +159,28 @@ body {
 .btn:hover {
   cursor: pointer;
   background-color: #161616;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex; /* all children in one line */
+  width: 1150px;
+  justify-content: space-between; /* add space between children  */
+  /* to centre text */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 400px;
+  font-size: 12px;
+  padding-bottom: 15px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright {
+}
+
+.stats {
 }
